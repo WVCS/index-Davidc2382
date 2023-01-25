@@ -1,15 +1,16 @@
 <html>
     <nav>
-  <li><a href="index.html"> HOME <a/></li>     
-    <li><a href="noun.html"> Bojack Horseman </a></li>
+  <li class="navli"><a href="index.html"> Home <a/></li>     
+    <li class="navli"><a href="noun.html"> Bojack Horseman </a></li>
+      <li class="navli"><a href="#lower"> Further Down </a></li>
     </nav>
   <head>
-      <br><br>
+    <br><br>
    <title>Noun Project</title>
   <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRVtNdmDpndyL7-6Q8KUHYfiEjVTFwfz8LhHGbafxx9rH7jwUNwg31Q1McPb_s0anAuU:https://m.media-amazon.com/images/M/MV5BYWQwMDNkM2MtODU4OS00OTY3LTgwOTItNjE2Yzc0MzRkMDllXkEyXkFqcGdeQXVyMTkxNjUyNQ%40%40._V1_.jpg&usqp=CAU">
   <center>
    <div class="w3-container w3-red">
-  <h1 style="text-shadow:2px 1px 0 red">Bojack Horseman Noun Project</h1>
+  <h1 style="text-shadow:2px 1px 0 cyan">Bojack Horseman Noun Project</h1>
      
 </div>
   </center>
@@ -21,6 +22,9 @@
     <li> Bojack </li>
     <li> Diane </li>
     <li> Todd </li>
+      <li> Mr. Penutbutter </li>
+      <li> Princess Carolyn </li>
+     
   </ol>
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXTRuhWV4yQMOn6S_QHHZrccGwqcJmvagWfNMqFqm7K4jzVZgc7HU4m3HOb6eGUuPpdg:https://i.pinimg.com/736x/c1/80/8b/c1808b14a04f0e9ae3a0e2ae5e7d0654--bojack-cotton-candy.jpg&usqp=CAU" alt="Trulli" width="500" height="333">
   <p> Topics in the show </p>
@@ -28,44 +32,75 @@
       <li> Realism </li>
       <li> Depression </li>
       <li> Addiction </li>
+       <li> Amending </li>
+        <li> Actions have consequences </li>
+      <li> Dwelling on the past </li>
     </l style="list-style-type:square;">
   
 </body>
    <br><br><br>
   <table>
   <tr>
-    <th> period </th>
-    <th> class </th>
-    <th> teacher </th>
+    <th> Character </th>
+    <th> Best Moments </th>
+    <th> Season </th>
      </tr>
      <tr>
+       <td> Todd </td>
+       <td> Rock Opera </td>
        <td> 1 </td>
-       <td> Math </td>
-       <td> Williams</td>
      </tr>
       <tr>
-       <td> 2</td>
-       <td> Marine Bio</td>
-       <td> Muench </td>
+       <td> Bojack</td>
+       <td> Underwater in the fish city </td>
+       <td> 2 </td>
      </tr> 
       <tr>
-       <td> 3</td>
-       <td> Web Design</td>
-       <td> Nueman </td>
+       <td> Diane </td>
+       <td> Writing Bojacks Novel</td>
+       <td> 1 </td>
      </tr>
      </tr> 
       <tr>
-       <td> 4</td>
-       <td> Online P.E </td>
-       <td> Henry </td>
+       <td> Mr. Penutbutter</td>
+       <td> Running for Govner of CA </td>
+       <td> 4 </td>
   </table>
-   </nav>
-</body>
+
+<img src="https://cdn.vox-cdn.com/thumbor/qHLzo15BqONRZKkJLt9XO1CwngI=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13089327/BoJackS5_EP6.jpg" width="700" height="700">
+     <h2 id="lower"1.> Bojack Funeral Episode </h2> 
 </html>
 
 <style>
-    
-    table, tr, th, td { border: solid orange 3px; border-radius: 10px;
+  nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  left: 0;
+  top: 0;
+}
+
+
+.navli {
+  display: inline;
+  float: right;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: White;
+}
+.navli:hover {
+  background-color: #448FA3;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+table, tr, th, td { border: solid cyan 3px; border-radius: 10px;
 }
 h1 {
   text-align: center;
@@ -77,7 +112,7 @@ td {
 }
 table {
   width: 50%
-  margin-right: 25%;
+  margin-right: 50%;
 
   tr:nth-child(even) {
   background-color: grey;
@@ -94,7 +129,7 @@ th, td {
   padding: 15px;
 }
 body {
-  background-color: #FAF0CA;
+  background-color: #F2E3BC;
 }
 
 img {
@@ -104,29 +139,16 @@ img {
   
 }
 a:hover {
-  background-color: yellow;
-}
-  nav {
-  list-style-type: none;
-  position: fixed;
-  width: 100vw;
-  background-color: antiquewhite;
-  left: 0;
-  top: 0;
+  background-color: #68C5DB;
 }
 
-
-li {
-  display: inline;
-  float: right;
-  padding: 20px;
+.navli {
+     font-family: "Lucida Console", "Courier New", monospace;
 }
-
-a {
-  text-decoration: none;
-  color: green;
+body {
+  font-family: "Courier New", Courier, monospace;
 }
-li:hover {
-  background-color: gold;
+p.thick {
+  font-weight: bold;
 }
 </style>
