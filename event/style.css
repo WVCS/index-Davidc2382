@@ -68,10 +68,10 @@ Fusce commodo ante in leo gravida finibus. Vestibulum ut lacus porttitor, faucib
 }
 
   .wrapper {
-
+ width: 100vw;
+  height: 100vh;
  background-color: green;
-  width: 95vw;
-  height: 100%;
+  
  
     display: grid;
     gap: 10px;
@@ -114,7 +114,7 @@ Fusce commodo ante in leo gravida finibus. Vestibulum ut lacus porttitor, faucib
     grid-row: 2 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: subgrid;
+    grid-template-rows: subgrid; 
   }
 
   .e {
@@ -138,9 +138,9 @@ Fusce commodo ante in leo gravida finibus. Vestibulum ut lacus porttitor, faucib
   width: 95vw;
   height: 100%;
 
-  display: flex;
+
  
-    display: grid;
+    display: flex;
     gap: 10px;
     grid-template-columns: 150px 100px 150px 100px ;
     grid-template-rows: repeat(3,minmax(100px,auto));
@@ -217,7 +217,7 @@ nav {
 @media screen and (max-height: 600px) {
   .sidenav {padding-top: 20px;}
   .sidenav a {font-size: 15px;}
- subgrid {
+ .subgrid {
     font-size: 10px;
   }
 }
@@ -225,5 +225,9 @@ nav {
 @media screen and (max-height: 300px) {
   .sidenav {padding-top: 20px;}
   .sidenav a {font-size: 10px;}
+}
+a {
+  text-decoration:none;
+  color:Black;
 }
 </style>
