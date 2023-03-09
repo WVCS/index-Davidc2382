@@ -150,8 +150,12 @@ nav {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
   .sidenav {padding-top: 20px;}
   .sidenav a {font-size: 15px;}
 }
 
+@media screen and (max-height: 300px) {
+  .sidenav {padding-top: 20px;}
+  .sidenav a {font-size: 10px;}
+}
