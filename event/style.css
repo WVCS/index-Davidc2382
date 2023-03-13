@@ -13,8 +13,9 @@ body {
     gap: 10px;
     grid-template-columns: 150px 100px 150px 100px ;
     grid-template-rows: repeat(3,minmax(100px,auto));
-    background-color: #57cc99;
+    background-color: #2C666E;
     color: #2C666E;
+    font-size:.75vw;
   }
  
   .box {
@@ -82,7 +83,7 @@ body {
     grid-template-rows: repeat(3,minmax(100px,auto));
    
     
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .navli {
@@ -104,7 +105,7 @@ nav {
 }
 .navli {
   display: inline;
-  font-size: 30px;
+  font-size: 2.5vw;
   
  margin:0;
     font-family: 'Brush Script MT', cursive;
@@ -155,7 +156,7 @@ div.content {
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -166,7 +167,7 @@ div.content {
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 200px) {
   .sidebar a {
     text-align: center;
     float: none;
