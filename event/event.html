@@ -2,8 +2,6 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Concert</title>
   <link rel="stylesheet" href="style.css">
@@ -11,13 +9,12 @@
 </head>
 
 <body>
+
   <nav>
     <li class="navli"><a href="../index.html"> Home <a /></li>
     <li class="navli"><a href="../noun.html"> Noun Project </a></li>
-    <li class="navli"><a href="../convince/twix.html"> Left Twix</a></li>
-    <li class="navli"><a href="#lower"> Further Down </a></li>
-    <li class="navli"><a href="food.html"> Back to The Top </a></li>
-
+<li class="navli"><a href="../convince.html"> Left Twix </a></li>
+    <li class="navli"><a href="../food.html"> Resturant </a></li>
     </li>
   </nav>
   <br>
@@ -25,23 +22,26 @@
   <br>
   <br>
   <br>
+
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+  <!-- Page content -->
+  <div class="content">
+    ..
+  </div>
+
   <div class="wrapper">
     <div class="box a"> </div>
     <div class="box b">
       <center> </center>
     </div>
-    <!-- The sidebar -->
-    <div class="sidebar">
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
 
-    </div>
-
-    <!-- Page content -->
-    <div class="content">
-      ..
-    </div>
     <div class="box d">
       <div class="box e">
 
@@ -60,7 +60,7 @@
 
 </html>
 <style>
-body {
+  body {
  
   background-color:#07393C;
 }
@@ -103,10 +103,6 @@ body {
     grid-column: 5 ;
   }
 
-  .c {
-    grid-column: 1;
-    grid-row: 2 / 4
-  }
 
   .d{
     grid-column: 2/ 6;
@@ -214,7 +210,7 @@ nav {
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
+  height: 100%;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
