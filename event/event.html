@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Concert</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="DIRECTlink.pictureFILE">
+</head>
+
+<body>
+
+  <nav>
+    <li class="navli"><a href="../index.html"> Home <a /></li>
+    <li class="navli"><a href="../noun.html"> Noun Project </a></li>
+<li class="navli"><a href="../convince.html"> Left Twix </a></li>
+    <li class="navli"><a href="../food.html"> Resturant </a></li>
+    </li>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+  <!-- Page content -->
+  <div class="content">
+    ..
+  </div>
+
+  <div class="wrapper">
+    <div class="box a"> </div>
+    <div class="box b">
+      <center> </center>
+    </div>
+
+    <div class="box d">
+      <div class="box e">
+
+        Fusce lacinia enim vitae felis consequat ornare. Nulla viverra suscipit congue. Quisque et lorem feugiat, ultricies felis pharetra, finibus dui. Maecenas mattis lorem in aliquam vulputate. Sed finibus lectus nec metus tincidunt, et volutpat sem pretium. Maecenas congue dapibus dolor, eget pretium diam fermentum id. Mauris rhoncus ac justo eu pulvinar.</div>
+      <div class="box f">
+        <h1> CockRoach Concert</h1>(other writing) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quam dolor, tincidunt euismod nibh a, eleifend eleifend orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras urna ligula, fringilla quis maximus eu, iaculis quis odio. Sed non laoreet lectus, sed fermentum turpis. Integer vitae ultricies diam, eu ultrices velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus rhoncus maximus felis at dictum. Suspendisse ac luctus erat. Integer luctus feugiat justo. In non sem enim. Praesent eu blandit risus.
+
+        Donec finibus libero at nunc hendrerit, eu cursus dolor placerat. Vivamus suscipit congue ante, ac dapibus massa lobortis vel. Donec faucibus erat sem, a aliquam risus euismod tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Donec ut pulvinar urna.
+
+      </div>
+      <div class="box g"> (final details/contacts) Eu cursus dolor placerat. Vivamus suscipit congue ante, ac dapibus massa lobortis vel. Donec faucibus erat sem, a aliquam risus euismod tincidunt. Nulla facilisi. In hac habitasse platea dictumst. Donec ut pulvinar urna. </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<style>
+  body {
+ 
+  background-color:#07393C;
+}
+
+  .wrapper {
+
+ background-color: ;
+  width: 95vw;
+  height: 100%;
+ 
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 150px 100px 150px 100px ;
+    grid-template-rows: repeat(3,minmax(100px,auto));
+    background-color: #2C666E;
+    color: #2C666E;
+    font-size:.75vw;
+  }
+ 
+  .box {
+    background-color: #2C666E;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+
+  .box .box {
+  
+    color: #444;
+    background-color:#F0EDEE;
+  }
+
+  .a {
+    grid-column: 5 / 1;
+  }
+
+  .b {
+    grid-column: 5 ;
+  }
+
+
+  .d{
+    grid-column: 2/ 6;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: subgrid; 
+  }
+
+  .e {
+    grid-row: 1 / 3;
+    grid-column: 1 ;
+  }
+
+  .f {
+    grid-row: 1;
+    grid-column: 2 / 4;
+  }
+
+  .g {
+    grid-row: 2;
+    grid-column: 2/4;
+  }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    background-color: ;
+  width: 95vw;
+  height: 100%;
+
+
+ 
+    display: flex;
+    gap: 10px;
+    grid-template-columns: 150px 100px 150px 100px ;
+    grid-template-rows: repeat(3,minmax(100px,auto));
+   
+    
+    flex-direction: row;
+  }
+}
+.navli {
+  display: inline;
+  font-size: 30px;
+
+ margin:0;
+    font-family: 'Brush Script MT', cursive;
+  float: right;
+  padding: 20px;
+}
+nav {
+  list-style-type: none;
+  position: fixed;
+  width: 100vw;
+  background-color: #57cc99;
+  left: 0;
+  top: 0;
+}
+.navli {
+  display: inline;
+  font-size: 2.5vw;
+  
+ margin:0;
+    font-family: 'Brush Script MT', cursive;
+  float: right;
+  padding: 20px;
+}
+}
+.navli:hover {
+  background-color: Gold;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  background-color: #2C666E;
+  position: fixed;
+  height: 110%;
+  overflow: auto;
+}
+
+
+.sidebar a {
+  display: block;
+  color: #57cc99;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #57cc99;
+  color: Black;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+}
+
+@media screen and (max-height: 600px) {
+  .sidenav {padding-top: 20px;}
+  .sidenav a {font-size: 15px;}
+ .subgrid {
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .sidenav {padding-top: 20px;}
+  .sidenav a {font-size: 10px;}
+}
+a {
+  text-decoration:none;
+  color:Black;
+}
+</style>
