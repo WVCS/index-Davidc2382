@@ -28,13 +28,29 @@
 
   <!-- The sidebar -->
   <div class="sidebar">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+    <a class="active" <button onclick="myFunction()">Home</button>
+      <script>
+        function myFunction() {
+          alert("We forgot the mortgage");
+        }
+      </script>
+    </a>
+    <a class="#about us" <button onclick="myFunction()">About Us</button>
+      <script>
+        function myFunction() {
+          alert("we forgot the mortgage");
+        }
+      </script>
+    </a>
+    <a class="#Contact Us" <button onclick="myFunction()">Contact Us</button>
+      <script>
+        function myFunction() {
+          alert("we forgot the mortgage");
+        }
+      </script>
+    </a>
 
   </div>
-
- 
 
   <div class="wrapper">
     <div class="box a"> Moonlight Concert
@@ -59,8 +75,8 @@
       Refunds will not be issued for products that have been opened or used, unless the product is defective.
       If you have any questions or concerns about our refund policy, please contact us. We're here to help.
       <li class="navli"><a href="#lower">
-          <p4> Thank you </p4>
-          <color=white>
+          <p4> </p4>
+
         </a> </li>
     </div>
     <div class="box c">
@@ -103,6 +119,7 @@
   }
 
   .wrapper {
+     background-color: #07393C;
     display: grid;
     gap: 10px;
     grid-template-columns: 150px 100px 150px 100px;
@@ -110,8 +127,7 @@
     background-color: white;
     color: white;
     text-align: center;
-       position: static;
-    
+    position: static;
   }
 
   .box {
@@ -137,19 +153,19 @@
     grid-column: 1/6;
     font-family: 'Brush Script MT', cursive;
     font-size: 2vw;
-    margin-left: 10%;
+    margin-left: 8.9%;
   }
 
   .c {
-    grid-column: 1/4;
+    grid-column: 0/4;
     grid-row: 2 / 4;
     font-family: 'Brush Script MT', cursive;
     font-size: 2vw;
-    margin-left: 10%;
+    margin-left: 1%;
   }
 
   .d {
-    grid-column: 4 / 6;
+    grid-column: 2 / 6;
     grid-row: 2 / 4;
     display: grid;
     font-size: 2vw;
@@ -204,7 +220,7 @@
 
   .navli {
     display: inline;
-    font-size: 2.5vw;
+    font-size: 2.1vw;
     margin: 0;
     font-family: 'Brush Script MT', cursive;
     float: right;
@@ -222,7 +238,7 @@
     width: 170px;
     background-color: #2C666E;
     position: fixed;
-    height: 110%;
+    height: 120%;
     overflow: auto;
   }
 
@@ -295,7 +311,7 @@
     }
 
     .sidenav a {
-      font-size: 10px;
+      font-size: 1vw;
     }
   }
 
@@ -305,7 +321,7 @@
   }
 
   img {
-    width: 60vw;
+    width: 10vw;
     height: 10vw;
   }
 
