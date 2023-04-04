@@ -1,8 +1,6 @@
 
 <html>
 <head>
-  <title> Wave Water Polo </title>
-  <link rel="icon" href="Wave WP.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -67,16 +65,14 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="../index.html" class="active">Home</a>
-
-  <a href="../noun.html"> Noun Project </a>
-   <a href="../convince/twix.html"> Left Twix</a>
-    <a href="../food/food.html"> Food</a>
- <a href="../event/event.html"> Event </a>
-  <a href="../final/final.html"> Final </a>
-     <a href="#lower"> Further Down </a>
-   <a href="food.html"> Back to The Top </a>
-   </nav>
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Noun Project</a>
+  <a href="#contact">Convince</a>
+  <a href="#about">Resturant</a>
+   <a href="#about">Event </a>
+     <a href="#about">Final </a>
+     <a href="#about">Lower </a>
+       <a href="#about">Back to the Top </a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -143,8 +139,27 @@ One of the standout features of the Wave Water Polo Store is their commitment to
       <div id="sec"> <center> <p2> The Store </p2> <br>Another great feature of the Wave Water Polo Store is their knowledgeable and friendly staff. They are passionate about water polo and are always happy to answer any questions that customers may have. They can offer advice on the best equipment for a particular skill level or position, and can also provide tips on how to improve one's game.
 
 In addition to their excellent products and customer service, the Wave Water Polo Store also offers competitive pricing. They understand that water polo can be an expensive sport, and they strive to make their products affordable for athletes of all levels. They also offer frequent sales and discounts, which makes it easy for athletes to stock up on the equipment they need without breaking the bank. </div>
-        <div id= "third"> <center> <p2> Final Thoughts </p2> <br> Overall, the Wave Water Polo Store is a fantastic destination for any water polo player. Whether you're a beginner just starting out or a seasoned pro, they have everything you need to excel in the sport. With their commitment to quality, knowledgeable staff, and competitive pricing, it's no wonder why so many athletes choose Wave Water Polo for their water polo needs.
-          <img src="Wave WP.png" </div>
+        <div id= "third"> <center> <p2> Mailing List </p2> <br> <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div> </div>
 </body>
 </html>
      
@@ -178,15 +193,15 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-     <style> 
-            .topnav {
+     <style>
+       .topnav {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
 body {
   font-family: Merriweather, serif;
-  font-size: 2.4vw;
+  font-size: 2.5vw;
   color:#FFFFFB;
   background-color: #247BA0;
 }
@@ -309,11 +324,45 @@ p2{
     float: right;
     padding: 20px;
   
-  img {
-    width: 20vw;
-    height: 20vw;
-  }
-  
   
   }
-            </style>
+
+image {
+  width: 20vw;
+  height: 20vw;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #006DAA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #247BA0;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #006494;
+  padding: 20px;
+}
+     </style>
+     
