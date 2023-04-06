@@ -76,7 +76,7 @@ body {
  <a href="../event/event.html"> Event </a>
   <a href="../final/final.html"> Final </a>
      <a href="#lower"> Further Down </a>
-   <a href="food.html"> Back to The Top </a>
+  
    </nav>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -132,7 +132,7 @@ function myFunction() {
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
  <div class="container">
-   <div id="first">  <center> <p2> Wave WP <img src="Wave WP.png" width="10vw" height="10vw" text-align left></p2> <p1> <center> Wave Water Polo is a company that is dedicated to providing high-quality water polo equipment and accessories to athletes of all levels. The company has been around for several years and has become a trusted name in the water polo community. Their mission is to provide athletes with the tools they need to perform their best and stay safe while playing.
+   <div id="first">  <center> <p2> Wave WP <img src="Wave WP.png" width="30vw" height="30vw" text-align left></p2> <p1> <center> Wave Water Polo is a company that is dedicated to providing high-quality water polo equipment and accessories to athletes of all levels. The company has been around for several years and has become a trusted name in the water polo community. Their mission is to provide athletes with the tools they need to perform their best and stay safe while playing.
 
 One of the featured stores on the Wave Water Polo website is the Wave Water Polo Store. This store is the go-to destination for all things water polo-related. They offer a wide variety of equipment, including balls, caps, goggles, and training gear. They also offer a range of apparel, such as T-shirts, hats, and jackets, so that athletes can represent their favorite sport both in and out of the water.
 
@@ -143,8 +143,8 @@ One of the standout features of the Wave Water Polo Store is their commitment to
  </p1> </div>
       <div id="sec"> <center> <p2> The Store </p2> <br>Another great feature of the Wave Water Polo Store is their knowledgeable and friendly staff. They are passionate about water polo and are always happy to answer any questions that customers may have. They can offer advice on the best equipment for a particular skill level or position, and can also provide tips on how to improve one's game.
 
-In addition to their excellent products and customer service, the Wave Water Polo Store also offers competitive pricing. They understand that water polo can be an expensive sport, and they strive to make their products affordable for athletes of all levels. They also offer frequent sales and discounts, which makes it easy for athletes to stock up on the equipment they need without breaking the bank. </div>  <a class="topnav"><a href="#lower"> </a>
-        <div id= "third"> <center> <p2> Mailing List </p2> <br> <div class="container">   </a>
+In addition to their excellent products and customer service, the Wave Water Polo Store also offers competitive pricing. They understand that water polo can be an expensive sport, and they strive to make their products affordable for athletes of all levels. They also offer frequent sales and discounts, which makes it easy for athletes to stock up on the equipment they need without breaking the bank. </div>  
+        <div id= "third"> <center>  <h2 id="lower" 1.> Mailing List </h2> <br> <div class="container">   </a>
   <form onsubmit="alert('Your kidney will be taken as payment')">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -168,6 +168,7 @@ In addition to their excellent products and customer service, the Wave Water Pol
     <input type="submit" value="Submit">
   </form>
 </div> </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>
      
@@ -200,6 +201,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+       
+       // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 2800) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 </script>
      <style>
        <style>
@@ -329,13 +351,7 @@ p2{
   from {opacity: .4}
   to {opacity: 1}
 }
-.navli {
-    display: inline;
-    font-size: 30px;
-    margin: 0;
-  font-family: "Times New Roman", Times, serif;
-    float: right;
-    padding: 20px;
+
   
   
   }
@@ -377,7 +393,25 @@ input[type=submit]:hover {
   background-color: #006494;
   padding: 20px;
 }
-     </style>
+   #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+    background-color:#247BA0;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
       </style>
      
