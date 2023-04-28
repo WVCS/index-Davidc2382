@@ -1,8 +1,8 @@
 
 <html>
 <head>
-  <title>  </title>
-  <link rel="icon" href="">
+  <title>  Theme Park</title>
+  <link rel="icon" href="Park (1).png">
 
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -197,6 +197,7 @@ But that's not all – Kot Bury Ferm is also home to a range of farm animals, so
 Our park is designed with your safety in mind, and our friendly staff are always on hand to help with any questions or concerns. With affordable admission prices and plenty of parking, Kot Bury Ferm is the perfect destination for a day out with the family.
 
 Don't wait – plan your visit to Kot Bury Ferm today and experience the ultimate in amusement park fun!</p1> <center> 
+     
 <!-- Trigger/Open The Modal -->
 <button id="myButton">More Info</button>
 
@@ -219,7 +220,34 @@ Egg collecting experience: $5 per person
 VIP tour (includes behind-the-scenes access and personalized tour guide): $50 per person
 Please note that prices are subject to change and additional fees may apply for certain experiences or services.</p>
   </div>
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myButton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  
+  </script>
 </div>
 
 
@@ -246,7 +274,29 @@ So come on down to Kot Bury Ferm and experience the joy of our zoo for yourself.
 
 <br> 
                   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-          
+          <script>
+            let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 1500
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+          </script>
+          </center>
 </body>
 </html>
      
@@ -281,45 +331,7 @@ function showSlides(n) {
 }
        
       
-let mybutton = document.getElementById("myBtn");
 
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 1500) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-var modal = document.getElementById("myModal");
-
-
-var btn = document.getElementById("myButton");
-
-
-var span = document.getElementsByClassName("close")[0];
-
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
      <style>
       
