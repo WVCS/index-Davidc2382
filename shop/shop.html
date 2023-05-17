@@ -1,1 +1,444 @@
+<html>
+	<center>
+		<head>
+			<title> MallWart </title>
+		</head>
+		<body>
+			<style>
+    .navbar {
+      overflow: hidden;
+      background-color: #01A7C2;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+    }
 
+    .navbar a {
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn,
+    .dropbtn:focus {
+      background-color: cyan;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: cyan;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+		</head>
+		<body>
+			<div class="navbar">
+				<a href="#home">Home</a>
+				<a href="#news">News</a>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Dropdown
+          
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+			</div>
+			<cen>
+				<div id="first">
+					<p3> Mallwart </p3>
+					<br> 
+        Mallwart is a one-stop-shop for all of your home needs. Our store is stocked with a wide variety of home items, including furniture, decor, appliances, kitchenware, bedding, and more, all at affordable prices.
+
+        At Mallwart, we believe that everyone should be able to create the home of their dreams without breaking the bank. That's why we offer great deals and discounts on our products, so you can get the items you need without worrying about the cost.
+
+        Whether you're looking for a new sofa to spruce up your living room, a stylish rug to add warmth to your bedroom, or a set of high-quality cookware to upgrade your kitchen, Mallwart has got you covered. Our friendly and knowledgeable staff are always on hand to help you find exactly what you're looking for, and to offer advice and suggestions to make your shopping experience even better.
+
+        We also offer a range of convenient services, such as delivery and assembly, to make your life easier and more stress-free. And with our easy returns policy, you can shop with confidence, knowing that if you're not completely satisfied with your purchase, we'll make it right.
+
+        So come on down to Mallwart and discover the great deals and amazing selection of home items we have to offer. You're sure to find something you love, at a price you can afford. 
+						<br>
+							<br>
+								<div class="Main Container">
+									<div class="product">
+										<img src="https://images.wbmason.com/500/XL_ALICDCNB800.JPG"
+          
+											<div class="product_desc">
+												<h3> Paper towels </h3>
+												<p> 19 dollars </p>
+												<br>
+												</div>
+												<div id="second">
+      Certainly, here are some frequently asked questions about Mallwart:
+      
+													<br>
+      Q: What kind of products does Mallwart sell?
+														<br>
+      A: Mallwart sells a wide variety of home items, including furniture, decor, appliances, kitchenware, bedding, and more.
+      
+															<br>
+      Q: Does Mallwart offer delivery?
+																<br>
+      A: Yes, we offer delivery for a fee. Please speak to a store representative for more information and pricing.
+      
+																	<br>
+      Q: What is Mallwart's return policy?
+																		<br>
+      A: We have a flexible and easy returns policy. If you're not satisfied with your purchase, simply bring it back within the specified return period and we'll either exchange it or provide you with a refund.
+      
+																			<br>
+      Q: Does Mallwart offer financing or payment plans?
+																				<br>
+      A: Yes, we offer financing options and payment plans through our store credit card or third-party finance partners. Speak to a store representative for more information and to apply.
+      
+																					<br>
+      Q: Are there any discounts or promotions available?
+																						<br>
+      A: Yes, we regularly offer discounts and promotions on our products. Check our website or sign up for our email newsletter to stay up-to-date on our latest offers.
+      
+																							<br>
+      Q: Does Mallwart have a loyalty program?
+																								<br>
+      A: Yes, we have a loyalty program where customers can earn points for their purchases and redeem them for rewards. Ask a store representative for more information and to sign up.
+      
+																									<br>
+      Q: Does Mallwart offer assembly or installation services? 
+																										<br>
+      A: Yes, we offer assembly and installation services for a fee. Speak to a store representative for more information and pricing.
+
+      If you have any other questions or concerns, please don't hesitate to contact our friendly and knowledgeable staff for assistance. We hope to see you soon at Mallwart!
+    
+																										</div>
+																										<script>
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
+																										<div id="entireDiv">
+																											<form autocomplete="off" action="http://www.google.com">
+																												<div class="autocomplete">
+																													<input id="myInput" type="text" name="myBox" placeholder="Search..." 
+																													</div>
+																												</form>
+																											</div>
+																											<script>
+      function autocomplete(inp, arr) {
+        var currentFocus;
+        inp.addEventListener("input", function(e) {
+          var a, b, i, val = this.value;
+          closeAllLists();
+          if (!val) {
+            return false;
+          }
+          currentFocus = -1;
+          a = document.createElement("DIV");
+          a.setAttribute("id", this.id + "autocomplete-list");
+          a.setAttribute("class", "autocomplete-items");
+          this.parentNode.appendChild(a);
+          for (i = 0; i < arr.length; i++) {
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+              b = document.createElement("DIV");
+              b.innerHTML = "
+																												<strong>" + arr[i].substr(0, val.length) + "</strong>";
+              b.innerHTML += arr[i].substr(val.length);
+              b.innerHTML += "
+																												<input type='hidden' value='" + arr[i] + "'>";
+              b.addEventListener("click", function(e) {
+                inp.value = this.getElementsByTagName("input")[0].value;
+                closeAllLists();
+              });
+              a.appendChild(b);
+            }
+          }
+        });
+        inp.addEventListener("keydown", function(e) {
+          var x = document.getElementById(this.id + "autocomplete-list");
+          if (x) x = x.getElementsByTagName("div");
+          if (e.keyCode == 40) {
+            currentFocus++;
+            addActive(x);
+          } else if (e.keyCode == 38) { //up
+            currentFocus--;
+            addActive(x);
+          } else if (e.keyCode == 13) {
+            e.preventDefault();
+            if (currentFocus > -1) {
+              if (x) x[currentFocus].click();
+            }
+          }
+        });
+
+        function addActive(x) {
+          if (!x) return false;
+          removeActive(x);
+          if (currentFocus >= x.length) currentFocus = 0;
+          if (currentFocus < 0) currentFocus = (x.length - 1);
+          x[currentFocus].classList.add("autocomplete-active");
+        }
+
+        function removeActive(x) {
+          for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("autocomplete-active");
+          }
+        }
+
+        function closeAllLists(elmnt) {
+          var x = document.getElementsByClassName("autocomplete-items");
+          for (var i = 0; i < x.length; i++) {
+            if (elmnt != x[i] && elmnt != inp) {
+              x[i].parentNode.removeChild(x[i]);
+            }
+          }
+        }
+        document.addEventListener("click", function(e) {
+          closeAllLists(e.target);
+        });
+      }
+      var autoAnswers = ["Pants", "Shirts", "Shoes", "Kidneys", "Funky", "Zaza", "Credit Card"];
+      autocomplete(document.getElementById("myInput"), autoAnswers);
+    
+																												</script>
+																											</body>
+																											<style>
+    .autocomplete {
+      background-color: #ccc;
+    }
+
+    #myInput {
+      width: 100%;
+      background-color: #ccc;
+      padding: 10px;
+    }
+
+    #entireDiv {
+      position: fixed;
+      right: 0;
+    }
+                                                        body {
+  background-color: #A3BAC3;
+  color: white;
+  font-size: 2vw;
+       font-family: Copperplate, Papyrus, fantasy;
+ 
+}
+p3 {
+  font-size: 3vw;
+}
+#navbar {
+    font-family: Copperplate, Papyrus, fantasy;
+ 
+}
+
+#first {
+  background-color:#007090;
+  width: 100%;
+  height: 100%;
+      font-family: Copperplate, Papyrus, fantasy;
+  
+}
+body {font-family: "Times New Roman", Times, serif;}
+* {box-sizing: border-box;}
+
+#shop1 {
+ background: #e0e5ec;
+  width: 50%;
+    height: 15%;
+  float: middle;
+}
+#shop2 {
+  background: #e0e5ec;
+  width: 50%;
+    height: 15%;
+  float: middle;
+}
+#shop3 {
+ background: #e0e5ec;
+  width: 50%;
+    height: 15%;
+ float: middle;
+  
+}
+
+#shop4 {
+ background: #e0e5ec;
+  width: 50%;
+    height: 15%;
+ float: middle;
+}
+
+#shop5 {
+  background: #e0e5ec;
+  width: 50%;
+    height: 15%;
+ float: middle;
+} 
+
+.btn-4 {
+  background-color: #4dccc6;
+background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-4:hover{
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.btn-4 span {
+  position: relative;
+  display: block; 
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: .1px;
+}
+.btn-4:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: .1px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: .1px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  
+}
+img {
+  float: left;
+  width: 40vw;
+    height: 37.5vw;
+}
+  </style>
