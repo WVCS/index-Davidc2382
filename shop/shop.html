@@ -4,6 +4,93 @@
 			<title> MallWart </title>
 		</head>
 		<body>
+      <script>
+        function autocomplete(inp, arr) {
+
+  var currentFocus;
+
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+
+      this.parentNode.appendChild(a);
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function(e) {
+
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+var autoAnswers = ["Pants", "Shirts", "Shoes", "Kidneys", "Funky", "Zaza", "Paper Towels"];
+
+autocomplete(document.getElementById("myInput"), autoAnswers);
+      </script>
 			<style>
     .navbar {
       overflow: hidden;
@@ -72,18 +159,35 @@
   </style>
 		</head>
 		<body>
+      <html>
+  <body>
+<div id="entireDiv">
+  <form autocomplete="off" action="http://www.google.com">
+    <div class="autocomplete">
+      <input id="myInput" type="text" name="myBox"
+             placeholder="Search..."
+             </div>
+      </form>
+    
+    
+    </div>
 			<div class="navbar">
-				<a href="#home">Home</a>
-				<a href="#news">News</a>
+		 <a href="../index.html" class="active">Home</a>
+				<a href="">Cart<img src=> </a>
 				<div class="dropdown">
 					<button class="dropbtn" onclick="myFunction()">Dropdown
           
 						<i class="fa fa-caret-down"></i>
 					</button>
 					<div class="dropdown-content" id="myDropdown">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+					  <a href="../noun.html"> Noun Project </a>
+   <a href="../convince/twix.html"> Left Twix</a>
+    <a href="../food/food.html"> Food</a>
+ <a href="../event/event.html"> Event </a>
+  <a href="../final/final.html"> Final </a>
+             <a href="  ../store/store.html"> Team </a>
+     <a href="  ../park/park.html"> Theme Park </a>
+            
 					</div>
 				</div>
 			</div>
@@ -107,8 +211,10 @@
 										<img src="https://images.wbmason.com/500/XL_ALICDCNB800.JPG"
           
 											<div class="product_desc">
-												<h3> Paper towels </h3>
-												<p> 19 dollars </p>
+												<h3> Paper towels <br>
+                    We Ran Out of Everything but Paper Towels</h3>
+                    <button class="button">19$ (Add to Cart)</button>
+										
 												<br>
 												</div>
 												<div id="second"> <br> <br> <br> 
@@ -355,5 +461,39 @@ button {
   width: 25%;
   padding: 120px;
 }
+                       .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.autocomplete {
+  background-color: #ccc;
+    
+}
+
+#myInput {width: 100%;
+background-color: #ccc;}
+
+#entireDiv {
+  position: fixed;
+  right:0;
+}                                
   </style>
 									
